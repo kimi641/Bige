@@ -1,6 +1,90 @@
-<% include head.ejs %>
-<head><title>碧歌</title></head>
-<html>
-<body>
-</body>
-</html>
+<title>碧歌</title>
+<% include indexhead.ejs %>
+</div>
+<div id="fullpage" class="fullpage-wrapper">
+    <div class="section">
+        <div class="bg">
+            <img src="images/index/index.jpg">
+        </div>
+        <div class="arrow">
+            <a href="#Page2">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+    <div class="section">
+        <img src="images/index/index.jpg">
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            //Navigation
+            menu:'#menu',
+            lockAnchors: false,
+            anchors:['Page1','Page2','Page3','Page4','Page5'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Page1','Page2','Page3','Page4','Page5'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom'
+        });
+    });
+    /*
+    $(document).ready(function () {
+        var yaxis = 0;
+        var scrollFunc = function (e) {
+            e = e||window.event;
+            var t1 = document.body;
+            if (e.wheelDelta){
+                t1.value = e.wheelDelta / 120;
+            }else if(e.detail){
+                t1.value = -e.detail / 3;
+            }
+            if (t1.value > 0) {
+                    yaxis += 967;
+            }else if (t1.value < 0 ){
+                    yaxis -= 967;
+            }
+            if (yaxis > 0){
+                yaxis = 0
+            }else if(yaxis < -5000){
+                yaxis += 967;
+            }
+            $("#fullpage").stop().animate({ borderspacing: yaxis},{
+                step: function (now, fx) {
+                    $(this).css("transform","translate(0px," + now + "px)");
+                    $(this).css("-webkit-transform","translate(0px," + now + "px)");
+                    $(this).css("-moz-transform", "translate(0px," + now + "px)");
+                },duration: 'slow'
+            },'linear');
+            console.log(yaxis);
+            console.log(t1.value);
+        }
+        if(document.addEventListener){
+            document.addEventListener("DOMMouseScroll", scrollFunc, false);
+        }
+        window.onmousesheel=document.onmousewheel=scrollFunc;
+    })
+    */
+
+</script>
