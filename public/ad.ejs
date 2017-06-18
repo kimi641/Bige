@@ -1,2 +1,29 @@
-<%- include head %>
-<%- include foot %>
+<head>
+    <meta charset="UTF-8">
+
+    <!--jquery-->
+    <script src="jquery-dist/jquery.js"></script>
+
+    <!--bootstrap-->
+    <script src="bootstrap-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-dist/css/bootstrap.css"/>
+
+    <!--my css-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet/less" type="text/css" href="stylesheets/style.less">
+
+    <!--fullpage-->
+    <script src="javascripts/jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="stylesheets/jquery.fullpage.css"/>
+
+    <!--map-->
+    <script src="javascripts/d3.min.js"></script>
+    <script src="javascripts/topojson.min.js"></script>
+    <script src="javascripts/datamaps.world.min.js"></script>
+
+    <!--less-->
+</head>
+<div id="map" style="position: relative; width: 500px; height: 300px;"></div>
+<script>
+    var map = new Datamap({element: document.getElementById('map')});
+</script>

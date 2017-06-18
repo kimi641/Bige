@@ -4,7 +4,7 @@
 <div id="fullpage" class="fullpage-wrapper">
     <div class="section">
         <div class="bg">
-            <img src="images/index/index.jpg">
+            <img data-src="images/index/index.jpg">
         </div>
         <div class="arrow">
             <a href="#Page2">
@@ -13,25 +13,126 @@
         </div>
     </div>
     <div class="section">
-        <img src="images/index/index.jpg">
+        <div class="bg">
+            <img data-src="images/index/remarkable.png">
+        </div>
+        <div class="arrow">
+            <a href="#Page3">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            </a>
+        </div>
     </div>
     <div class="section">
-        <img src="images/index/index.jpg">
+        <div class="bg">
+            <img data-src="images/index/team.png">
+        </div>
+        <div class="arrow">
+            <a href="#Page4">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            </a>
+        </div>
     </div>
     <div class="section">
-        <img src="images/index/index.jpg">
+        <div class="bg">
+            <img data-src="images/index/trust.png">
+        </div>
+        <div class="tab_block">
+            <div class="tab_tit"></div>
+            <div class="tab_box ry">
+                <dl>
+                    <dd class="current">
+                        <h3>2016</h3>
+                    </dd>
+                    <dt>2015</dt>
+                    <dd>
+                        <h3>2015</h3>
+                    </dd>
+                    <dt>2014</dt>
+                    <dd>
+                        <h3>2014</h3>
+                    </dd>
+                    <dt>2013</dt>
+                    <dd>
+                        <h3>2013</h3>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="arrow">
+            <a href="#Page5">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            </a>
+        </div>
     </div>
     <div class="section">
-        <img src="images/index/index.jpg">
+        <div class="bg">
+            <img data-src="images/index/ambition.png">
+        </div>
+        <div class="map">
+            <div id="container" style="position: relative; width: 500px; height: 250px;"></div>
+            <script data-info="world map">
+                var container = new Datamap({
+                    element: document.getElementById('container'),
+                    projection: 'mercator',
+                    geographyConfig: {
+                        popupOnHover: false,
+                        highlightOnHover: false
+                    },
+                    fills : {
+                        selected : '#fff',
+                        defaultFill: '#444'
+                    },
+                    data: {
+                        "USA": {
+                            "fillKey" : "selected"
+                        },
+                        "RUS": {
+                            "fillKey" : "selected"
+                        },
+                        "ESP": {
+                            "fillKey" : "selected"
+                        },
+                        "CHN": {
+                            "fillKey" : "selected"
+                        },
+                        "JPN":{
+                            "fillKey" : "selected"
+                        },
+                        "GBR": {
+                            "fillKey" : "selected"
+                        },
+                        "KOR": {
+                            "fillKey" : "selected"
+                        },
+                        "IND": {
+                            "fillKey" : "selected"
+                        }
+                    }
+                });
+                container.bubbles([
+                    {
+                        radius: 10,
+                        fillKey: 'USA',
+                        centered: 'USA',
+                        name: '美国'
+                    }
+                ],{
+                    popupTemplate: function (geo, data) {
+                        return '<div class = "hoverinfo">' + data.name
+                    }
+                });
+            </script>
+        </div>
+        <div class="arrow">
+            <a href="#Page5">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            </a>
+        </div>
     </div>
     <div class="section">
-        <img src="images/index/index.jpg">
-    </div>
-    <div class="section">
-        <img src="images/index/index.jpg">
-    </div>
-    <div class="section">
-        <img src="images/index/index.jpg">
+        <div class="bg">
+            <img data-src="images/index/index.jpg">
+        </div>
     </div>
 </div>
 <script>
@@ -43,12 +144,23 @@
             anchors:['Page1','Page2','Page3','Page4','Page5'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Page1','Page2','Page3','Page4','Page5'],
+            //navigationTooltips: ['Page1','Page2','Page3','Page4','Page5'],
             showActiveTooltip: false,
-            slidesNavigation: false,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom'
         });
     });
+
+    window.onresize = resizewindows;
+    function resizewindows() {
+        var winW = $(window).width();
+        if (winW  > 1300){
+            $(".head").css({"width":"1200px"});
+        }else {
+            $(".head").css({"width":"1100px"});
+        }
+
+    }
     /*
     $(document).ready(function () {
         var yaxis = 0;
@@ -88,3 +200,4 @@
     */
 
 </script>
+<script src="javascripts/bootstrap-hover-tabs.js"></script>
