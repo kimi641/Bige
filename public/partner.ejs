@@ -11,7 +11,124 @@
     <div class="wr_top">
         <b>战略合作</b>
     </div>
-
-
+    <div class="wr_about">
+        <ul  class="nav nav-pills" id="tabtit">
+            <li class="active"><a href="#partner" data-toggle="tab">合作伙伴</a> </li>
+            <li><a href="#hotel" data-toggle="tab">合作酒店</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="partner">
+                <ul class="list">
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show-box">
+                            <img src="images/partner/img_hz01.jpg">
+                            <div class="subtitle">
+                                <span></span>
+                                <p>宝马</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="hotel">
+                合作酒店
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    $(".show-box").each(function(){
+        var self = $(this), delay;
+        self.mouseover(function(){
+            delay = setTimeout(function(){ delay = null; self.find(".subtitle").stop().animate({"bottom":0}, 190);},80);
+        }).mouseout(function(){
+            if(delay){
+                clearTimeout(delay);
+            }else{
+                setTimeout(function(){self.find(".subtitle").stop().animate({"bottom":-190}, 190);},80);
+            }
+        });
+    });
+    $(function () {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            var activeTab = $(e.target).text();
+            var previousTab = $(e.relatedTarget).text();
+            $(".active-tab span").html(activeTab);
+            $(".previous-tab span").html(previousTab);
+        })
+    })
+
+</script>
 <%- include foot.ejs%>

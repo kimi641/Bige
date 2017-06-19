@@ -37,6 +37,7 @@ a {
     line-height: 47px;
     width: 100px;
     text-align: center;
+    line-height: 25px;
 }
 
 .head ul.nav li a{
@@ -46,6 +47,10 @@ a {
     height: 47px;
     width: 100px;
     display: block;
+}
+
+.head ul.nav li a:hover{
+    background: url("../images/navbg.png") center;
 }
 
 .head_index{
@@ -146,6 +151,23 @@ a {
     z-index: 999;
 }
 
+.contact {
+    position: absolute;
+    width: 335px;
+    height: 480px;
+    top: 30%;
+    right: 20%;
+}
+
+.contact input {
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact button {
+    height:60px;
+}
 
 .info{
     width:1000px;
@@ -201,6 +223,69 @@ a {
     width: 1200px;
     position: relative;
     overflow: hidden;
+}
+
+#tabtit {
+    left: 50%;
+    width: auto;
+    display: table;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.list {
+    overflow: hidden;
+    list-style: none;
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.list li {
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+    width: 178px;
+    height: 178px;
+    border: solid 1px #ccc;
+}
+
+.show-box {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    display: inline;
+}
+
+.show-box .subtitle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.show-box .subtitle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #2e6da4;
+}
+
+.show-box .subtitle p {
+    font-size: 24px;
+    line-height: 180px;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
 }
 
 .foot_bg{
