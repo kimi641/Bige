@@ -1,16 +1,607 @@
+<title>加入我们</title>
 <%- include head %>
 <div class="info">
     <h1>招贤纳士</h1>
-    <p>blablablablabla</p>
+    <hr>
+    <p>我们创始于2012年，三年专业经验，5位创意精英，30人项目团队。我们是最专业、最高效的会展服务团队，我们凝聚、专注、坚韧、年轻而又充满活力。欢迎有志之士加入我们！</p>
 </div>
 <div class="banner">
-    <img src="images/award/head.jpg">
+    <img src="images/join/banner.png">
 </div>
 </div>
 <div class="whit_bg">
     <div class="wr_top">
         <b>招贤纳士</b>
     </div>
+    <div class="wr_about">
+        <table data-toggle="table"
+               data-url="data/position.json"
+               data-query-params="queryParams"
+               data-search="true"
+               data-show-refresh="true"
+               data-show-toggle="true"
+               data-pagination="true"
+               data-page-size="6">
+            <thead>
+            <tr>
+                <th data-field="position" data-formatter="positionFormatter" data-align="center">招聘职位</th>
+                <th data-field="company" data-formatter="companyFormatter" data-align="center">公司</th>
+                <th data-field="department" data-align="center">部门</th>
+                <th data-field="site" data-align="center">地点</th>
+                <th data-field="date" data-align="center">发布时间</th>
+                <th data-field="class" data-formatter="classFormatter" data-align="center">职位申请</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
 
+    <!--Modal-->
+    <div class="modal fade" id="operator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel1">项目执行人员</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>项目执行人员</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：酒店／餐饮／旅游／服务</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 根据公司发展和项目需求，开发和引进新资源新供应商；</p>
+                        <p class="col-md-12">2. 关注供应链管理和开发，联合供应商开发新资源新产品；</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 在会展、旅行社、公关、广告行业一年以上工作经验；</p>
+                        <p class="col-md-12">2. 对舞美搭建、灯光音响有基本的认识；</p>
+                        <p class="col-md-12">3. 相关行业内负责过差旅活动或公关活动</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="operator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel1">项目执行人员</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>项目执行人员</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：酒店／餐饮／旅游／服务</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 在会展、旅行社、公关、广告行业一年以上工作经验；</p>
+                        <p class="col-md-12">2. 对舞美搭建、灯光音响有基本的认识；</p>
+                        <p class="col-md-12">3. 相关行业内负责过差旅活动或公关活动；</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="service" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel2">客服专员</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>客服专员</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：公务员／翻译／其他</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：20-35</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 在会展行业一年以上工作经验；</p>
+                        <p class="col-md-12">2. 思想健康、积极向上，对待工作认真负责；</p>
+                        <p class="col-md-12">3. 有较强的沟通能力和应变能力；</p>
+                        <p class="col-md-12">4. 五官端正，普通话标准，口语表达清晰；</p>
+                        <p class="col-md-12">5. 对客户进行电话回访，跟踪；</p>
+                        <p class="col-md-12">6. 熟悉使用办公室软件；</p>
+                        <p class="col-md-12">7. 至少有一年会展销售经验或电话销售经验优先；</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="insideDesigner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel3">室内设计师</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>室内设计师</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：广告／市场／公关／媒介</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：广告学/艺术设计</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 负责各类活动的舞美方案设计，室内场景效果图绘制；</p>
+                        <p class="col-md-12">2. 负责各类活动的舞美方案设计，室内场景效果图绘制；</p>
+                        <p class="col-md-12">3  搜集、整理国内外精品演出、视觉艺术工程、大型会议展览等优秀案例并与同事进行分享；</p>
+                        <p class="col-md-12">4. 配合部门完成其它设计工作。</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 大学专科以上学历，舞台美术设计、室内设计、环境艺术或动画设计相关专业毕业（条件优秀者可特殊考虑），独立完成作品；</p>
+                        <p class="col-md-12">2. 扎实的美术功底，富创新能力，具备较高的艺术修养，熟悉舞台灯光视频特效等相关知识；有一定手绘能力；</p>
+                        <p class="col-md-12">3. 熟练掌握3DMAX、AutoCAD、VR、Illustrator、Photoshop等相关制图软件；对建筑结构，材料方面有一定了解；</p>
+                        <p class="col-md-12">4. 能独立完成结构设计及后期渲染，设计方案的效果图、施工图；熟悉舞台美术、展览展示活动相关制作工艺及材料；</p>
+                        <p class="col-md-12">5. 思想敏锐、沟通能力强，工作认真；具有责任心及良好的团队协作意识，与合作者有良好的沟通协调能力；能承受工作压力；</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="buyer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel4">采购员</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>采购员</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：贸易／物流／采购／运输</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 接收项目需求，下达采购订单；</p>
+                        <p class="col-md-12">2. 采购订单价格审核和供应商执行监督；</p>
+                        <p class="col-md-12">3. 内部采购流程执行规范监督；</p>
+                        <p class="col-md-12">4. 供应商资源开发和信息报备；</p>
+                        <p class="col-md-12">5. 配合部门的其它工作安排。</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 专科及以上学历，旅游会展、公关广告、材料物流、电子信息等专业；</p>
+                        <p class="col-md-12">2. 对海南会奖市场有一定了解，熟悉本地交通及市场分布情况；</p>
+                        <p class="col-md-12">3. 了解各种互联网采购渠道，具备良好的沟通能力，有一定的成本意识；</p>
+                        <p class="col-md-12">4. 熟练使用EXCEL、PPT等办公软件，熟练的电脑操作技能；</p>
+                        <p class="col-md-12">5. 善于学习，责任心强，具备敬业精神和一定的抗压能力。</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="3DDesigner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel5">3D设计师</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>3D设计师</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：广告／市场／公关／媒介</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 负责各类活动的舞美方案设计，场景效果图绘制；</p>
+                        <p class="col-md-12">2. 对创意概念、创意发想和创意执行进行把控；</p>
+                        <p class="col-md-12">3. 搜集、整理国内外精品演出、视觉艺术工程、大型会议展览等优秀案例并与同事进行分享；</p>
+                        <p class="col-md-12">4. 配合部门完成其它设计工作。</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 大学专科以上学历，舞台美术设计、室内设计、环境艺术或动画设计相关专业毕业（条件优秀者可特殊考虑），独立完成作品；</p>
+                        <p class="col-md-12">2. 扎实的美术功底，富创新能力，具备较高的艺术修养，熟悉舞台灯光视频特效等相关知识；有一定手绘能力；</p>
+                        <p class="col-md-12">3. 熟练掌握3DMAX、AutoCAD、VR、Illustrator、Photoshop等相关制图软件；对建筑结构，材料方面有一定了解；</p>
+                        <p class="col-md-12">4. 能独立完成结构设计及后期渲染，设计方案的效果图、施工图；熟悉舞台美术、展览展示活动相关制作工艺及材料；</p>
+                        <p class="col-md-12">5. 思想敏锐、沟通能力强，工作认真；具有责任心及良好的团队协作意识，与合作者有良好的沟通协调能力；能承受工作压力；</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="copywriter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel6">文案策划</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>文案策划</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：广告／市场／公关／媒介</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：广告学</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 负责撰写活动策划案及细化活动执行流程；</p>
+                        <p class="col-md-12">2. 通过和客户沟通，精准把握客户需求，开展活动方案撰写工作；</p>
+                        <p class="col-md-12">3. PPT需要做的高端大气，理念、创意新颖，独立完成方案制作；</p>
+                        <p class="col-md-12">4. 具有良好的活动策划经验及资源；</p>
+                        <p class="col-md-12">5. 能与其他部门高效配合，为用户带来良好的活动体验，至活动完成；</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 有会展公司或公关公司两年以上文案策划工作经验，或具有相关行业的从业背景；</p>
+                        <p class="col-md-12">2. 具备良好的创意性思维和丰富的想象力，文案及PPT制作功底好者优先；有互联网营销工作经验者优先；</p>
+                        <p class="col-md-12">3. 具备较强的组织能力，善于沟通，心思缜密，表达能力强，熟悉组织活动的内外部流程；</p>
+                        <p class="col-md-12">4. 熟练使用power point. excel、word等办公软件。</p>
+                        <p class="col-md-12">5. 具备很强的策划能力，熟悉各类媒体运作方式，有大型活动推广成功经验；</p>
+                        <p class="col-md-12">6. 广告学、公共关系学、新闻学、市场营销 、会展、中文学等专业优先；</p>
+                        <p class="col-md-12">7. 2年以上相关行业工作经验。</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="2DDesigner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel7">平面设计师</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>平面设计师</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：广告／市场／公关／媒介</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：艺术设计</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 负责项目中涉及的平面整体视觉设计工作；</p>
+                        <p class="col-md-12">2. 负责公司内外宣的视觉设计工作；</p>
+                        <p class="col-md-12">3. 负责项目及公司内外宣资料的排版、印刷和广告物料等后期制作。</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 大专以上学历，美术或设计相关专业毕业，能独立完成整个项目的平面视觉表现，对色彩运用敏感；</p>
+                        <p class="col-md-12">2. 能熟练运用Photoshop，coreldraw，Illustrator等设计软件，有较强的学习能力；</p>
+                        <p class="col-md-12">3. 沟通协调能力强，能迅速适应环境，接受新事物，有较强的抗压能力，勇于接受挑战，团队协作能力强；</p>
+                        <p class="col-md-12">4. 良好的美术功底，较高的艺术素养及创意水平，有丰富的想象力，具备独特的设计理念和创新能力，能独立完成各种设计方案及制作，能准确把握功能尺度；</p>
+                        <p class="col-md-12">5. 有一定商业设计实际操作经验，有成功作品；</p>
+                        <p class="col-md-12">6. 有足够的工作排序能力，能对公司所有需要设计创作的项目提供足够的支持。</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="brandManager" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel8">品牌经理</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>品牌经理</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：广告／市场／公关／媒介</p>
+                        <p class="col-lg-3">招聘人数：1</p>
+                        <p class="col-lg-3">工作经验：3年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：新闻学/广告学</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 市场营销、管理学、广告类或者相关专业，大专以上学历；</p>
+                        <p class="col-md-12">2. 具有会展、旅游、广告传媒等行业的从业背景，在相关企业任职品牌经理三年以上；</p>
+                        <p class="col-md-12">3. 熟悉公关媒体品牌推广运作，具有出色的品牌策略能力及整吅传播技巧；</p>
+                        <p class="col-md-12">4. 品牌意识强，具有出色提案能力和沟通技巧,有大型相关策划实务操作经验及成功品牌策划案例；</p>
+                        <p class="col-md-12">5. 对市场有灵敏的触觉和较强的资讯搜集能力,能独力操作品牌营销工作。</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="adManager" tabindex="-1" role="dialog" aria-labelledby="myModalLabel9">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel9">广告业务销售主管</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>广告业务销售主管</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：广告／市场／公关／媒介</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：1年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：市场营销/广告学</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 通过各种渠道方式开发新客户和挖掘业务机会，了解客户的市场战略及市场推广计划，全面建立长久的客户合作关系。</p>
+                        <p class="col-md-12">2. 为客户制定广告项目方案，并及时准确反馈客户需求，为客户提供个性化、专业化的营销推广服务。</p>
+                        <p class="col-md-12">3. 与大客户或者品牌客户发展长期稳定的合作关系，建立与行业客户的合作伙伴关系。</p>
+                        <p class="col-md-12">4. 独立自主开发客户，完成销售任务指标，开发客户、谈判、签约，实现既定业绩收入。</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 广告、市场营销类专业优先，形象气质佳，男女均可，22-35岁之间；</p>
+                        <p class="col-md-12">2. 具相关销售，广告行业及相关行业（如亮化、展览展示等方面）等5年以上行业工作经验者优先；</p>
+                        <p class="col-md-12">3. 熟悉广告行业，曾经有品牌服务的成功案例，有挖掘客户资源能力。</p>
+                        <p class="col-md-12">4. 具有较强的沟通协调能力，谈判技巧，较强的表达能力，良好的服务意识，敏锐的市场触觉；</p>
+                        <p class="col-md-12">5. 具有较强的沟通协调能力，谈判技巧，较强的表达能力，良好的服务意识，敏锐的市场触觉；</p>
+                        <p class="col-md-12">6. 有客户资源，擅长市场推广。有一定的政府企业人脉和关系客户，有能力独立自主开发业务，有广告行业的销售经验者优先。</p>
+                        <p class="col-md-12">7. 具有驾驶执照及两年以上驾驶经验。</p>
+                        <p class="col-md-12">8. 熟练3DMAX，CAD，熟悉PS,AI等相关设计软件。</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectManager" tabindex="-1" role="dialog" aria-labelledby="myModalLabel10">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    <h2 class="modal-title" id="myModalLabel10">会展项目经理</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>会展项目经理</h4>
+                    <p>工资：5-10K</p>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">工作地点：上海</p>
+                        <p class="col-lg-3">职业类型：销售类</p>
+                        <p class="col-lg-3">招聘人数：3</p>
+                        <p class="col-lg-3">工作经验：3年以上</p>
+                    </div>
+                    <div class="row">
+                        <p class="col-lg-3">年龄要求：23-40</p>
+                        <p class="col-lg-3">性别要求：</p>
+                        <p class="col-lg-3">专业要求：旅游管理/公共关系</p>
+                        <p class="col-lg-3">外语要求：</p>
+                    </div>
+                    <hr>
+                    <h4>工作职责：</h4>
+                    <div class="row">
+                        <p class="col-md-12">岗位职责：</p>
+                        <p class="col-md-12">1. 负责展览会议整体的招商招展及管理统筹工作；</p>
+                        <p class="col-md-12">2. 开拓合作伙伴,定期与合作客户进行沟通,建立良好的长期合作关系；</p>
+                        <p class="col-md-12">3. 带领团队完成公司下达的销售任务与指标；</p>
+                        <p class="col-md-12">4. 负责项目团队员工的培训指导与绩效考核等工作；</p>
+                        <p class="col-md-12">5. 制定团队销售计划与指标，并按照销售计划执行完成销售目标；</p>
+                    </div>
+                    <hr>
+                    <h4>工作要求：</h4>
+                    <div class="row">
+                        <p class="col-md-12">任职要求：</p>
+                        <p class="col-md-12">1. 要求大专以上学历，会展管理、市场营销、工商管理、国际贸易等相关专业</p>
+                        <p class="col-md-12">2. 二年以上大型广告公司、公关公司、房产公司、展览公司等销售团队管理经验；</p>
+                        <p class="col-md-12">3. 负责项目团队的组建及日常运营，培养并提升团队的销售能力；</p>
+                        <p class="col-md-12">4. 有敏锐的市场开拓能力,熟悉展览会议营运流程，能承受工作压力,敢于挑战；5、能独立带团完成销售团队的销售指标，做好客户管理与维护等相关工作；</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mail">申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="myMail">
+        <div class="modal-dialog" style="width: 600px">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myMail">申请职位</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3>请将简历发送至邮箱：lucas@biggerphoto.cn</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">知道了</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    function positionFormatter(value) {
+        return '<b>' + value +'</b>';
+    }
+    function companyFormatter(value) {
+        return '<a href="/">' + value + "</a>";
+    }
+    function classFormatter(value) {
+        return '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#' + value + '">申请</button>';
+    }
+</script>
 <%- include foot.ejs%>

@@ -255,6 +255,20 @@ a {
     border: solid 1px #ccc;
 }
 
+.listh li {
+    float: left;
+    overflow: hidden;
+    list-style: none;
+    margin: 30px;
+    width: 500px;
+    height: 375px;
+    border: solid 1px #ccc;
+}
+
+.listh img{
+    width: 100%;
+}
+
 .show-box {
     position: relative;
     overflow: hidden;
@@ -288,6 +302,48 @@ a {
     text-align: center;
 }
 
+.show-hotel {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    display: inline;
+}
+
+.show-hotel .subtitle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    lef:0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.show-hotel .subtitle span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #2e6da4;
+}
+
+.show-hotel .subtitle p{
+    font-size: 40px;
+    line-height: 360px;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-dialog {
+    width: 1200px;
+}
+
+.fixed-table-container tbody tr td{
+    height: 100px;
+    line-height: 80px;
+}
+
 .foot_bg{
     background: #333333;
 }
@@ -298,6 +354,11 @@ a {
     overflow: hidden;
     height: 240px;
     position: relative;
+    color: #ffffff;
+}
+
+.foot_nav a{
+    font-weight: bold;
     color: #ffffff;
 }
 
@@ -333,7 +394,7 @@ a {
 .foot_qq {
     position: absolute;
     left: 760px;
-    top:155px;
+    top:100px;
     height: 34px;
     padding-left: 50px;
     background: url(../images/qq.png) left no-repeat;
