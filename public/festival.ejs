@@ -1,10 +1,12 @@
+<title>节庆赛事</title>
 <%- include head %>
 <div class="info">
     <h1>节庆赛事</h1>
-    <p>blablablablabla</p>
+    <hr>
+    <p>我们由最专业的策划团队精心策划、由最高效的执行团队完美把控活动中的每一个细节。服务客户涉及协会、企业、政府等多个领域。</p>
 </div>
 <div class="banner">
-    <img src="images/award/head.jpg">
+    <img src="images/festival/banner.png">
 </div>
 </div>
 <div class="whit_bg">
@@ -39,11 +41,11 @@
         for(var i =0; i != 5; i++){
             if (i==1) {
                 $('.carousel-inner').append(
-                    "<div class=\"item active\"><img src=\"/images/award/" + i + ".jpg\"><div class=\"carousel-caption\"><h3>" + description[i] + "</h3></div>"
+                    "<div class=\"item active\"><img src=\"/images/festival/" + i + ".jpg\">"
                 );
             }else{
                 $('.carousel-inner').append(
-                    "<div class=\"item\"><img src=\"/images/award/" + i + ".jpg\"><div class=\"carousel-caption\"><h3>" + description[i] + "</h3></div>"
+                    "<div class=\"item\"><img src=\"/images/festival/" + i + ".jpg\">"
                 );
             }
         }

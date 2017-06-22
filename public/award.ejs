@@ -1,10 +1,12 @@
+<title>会奖管理</title>
 <%- include head %>
     <div class="info">
         <h1>会奖管理</h1>
-        <p>blablablablabla</p>
+        <hr>
+        <p>我们通过强大的平台资源整合能力，为客户提供专业管理、高效运作以及贴心服务的会议与奖励旅游服务。我们设有国际会奖服务团队，提供全英文服务。目前已在英国、西班牙、土耳其、俄罗斯、阿联酋、美国等数十个国家地区为客户提供专业服务。</p>
     </div>
     <div class="banner">
-        <img src="images/award/head.jpg">
+        <img src="images/award/banner.png">
     </div>
 </div>
 <div class="whit_bg">
@@ -39,11 +41,11 @@
         for(var i =0; i != 5; i++){
             if (i==1) {
                 $('.carousel-inner').append(
-                    "<div class=\"item active\"><img src=\"/images/award/" + i + ".jpg\"><div class=\"carousel-caption\"><h3>" + description[i] + "</h3></div>"
+                    "<div class=\"item active\"><img src=\"/images/award/" + i + ".jpg\">"
                 );
             }else{
                 $('.carousel-inner').append(
-                    "<div class=\"item\"><img src=\"/images/award/" + i + ".jpg\"><div class=\"carousel-caption\"><h3>" + description[i] + "</h3></div>"
+                    "<div class=\"item\"><img src=\"/images/award/" + i + ".jpg\">"
                 );
             }
         }
